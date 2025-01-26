@@ -82,6 +82,10 @@ function LoginCard() {
           Welcome to{' '}
           <span className="font-semibold italic">Pairfect Match</span>
         </h4>
+        <div className="mt-4 flex flex-col space-y-2 text-sm font-medium">
+          <p>good morning queens. sign in to get to the home page</p>
+          <p>to delete this, go to src/components/LoginCard.tsx, lines 85-88</p>
+        </div>
       </div>
       <div className="flex flex-col space-y-4">
         <Input

@@ -5,9 +5,13 @@ import { createClient } from '@/utils/supabase/supabase';
 import { logout } from '@/utils/actions';
 import Button from '@/components/Button';
 
+import { useRouter } from 'next/navigation';
+
 export default function ProfilePage() {
   const supabase = createClient();
   const [showSetupButton, setShowSetupButton] = useState(false);
+
+  const router = useRouter();
 
   useEffect(() => {
     async function checkUserProfile() {
@@ -42,7 +46,15 @@ export default function ProfilePage() {
     <div className="flex grow flex-col">
       <h1 className="text-cream">Profile</h1>
       <div className="flex flex-col space-y-4">
-        {showSetupButton && <Button>Set up profile</Button>}
+        {showSetupButton && (
+          <Button
+            onClick={() => {
+              router.push('/setup');
+            }}
+          >
+            Set up profile
+          </Button>
+        )}
         <Button onClick={logout}>Log out</Button>
       </div>
     </div>
