@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
       className={clsx(
-        'w-32 rounded-full bg-pear-500 py-2 font-sans font-medium text-cream transition duration-200 ease-in-out',
+        'min-w-32 rounded-full bg-pear-500 px-4 py-2 font-sans font-medium text-cream transition duration-200 ease-in-out',
         'hover:bg-pear-600 active:scale-95',
         disabled && 'cursor-not-allowed opacity-60',
         className,

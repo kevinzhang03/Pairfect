@@ -65,6 +65,7 @@ export default {
         },
         cream: {
           DEFAULT: '#FFF9F3',
+          200: '#E6E0DA',
         },
         brown: {
           DEFAULT: '#211710',
