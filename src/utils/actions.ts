@@ -1,7 +1,5 @@
 'use server';
 
-// import { revalidatePath } from 'next/cache';
-// import { redirect } from 'next/navigation';
 import { createClient } from '@/utils/supabase/server';
 
 interface LoginFormData {
@@ -37,4 +35,10 @@ export async function signup(formData: LoginFormData) {
   } else {
     return { success: true, error: null };
   }
+}
+
+export async function logout() {
+  const supabase = await createClient();
+
+  await supabase.auth.signOut();
 }

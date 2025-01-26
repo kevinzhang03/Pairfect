@@ -11,6 +11,8 @@ interface LoginFormData {
   password: string;
 }
 
+const SHOW_SUCCESS = false;
+
 function LoginCard() {
   const [formData, setFormData] = useState<LoginFormData>({
     email: '',
@@ -29,10 +31,9 @@ function LoginCard() {
   const handleSubmit = async () => {
     setLoading(true);
     setError(null);
+    setSuccess(false);
 
     const result = isLogin ? await login(formData) : await signup(formData);
-
-    // const result = await login(formData);
 
     setLoading(false);
 
@@ -43,6 +44,16 @@ function LoginCard() {
       setSuccess(true);
     }
   };
+
+  // const handleLogout = async () => {
+  //   setLoading(true);
+  //   setError(null);
+  //   setSuccess(false);
+
+  //   await logout();
+
+  //   setLoading(false);
+  // };
 
   const swapLogin = () => {
     setIsLogin(!isLogin);
@@ -58,7 +69,7 @@ function LoginCard() {
 
   const disableButton = () => {
     const fieldsEmpty = formData.email === '' || formData.password === '';
-    return loading || checkConfirmPassword() || fieldsEmpty;
+    return loading || (checkConfirmPassword() && !isLogin) || fieldsEmpty;
   };
 
   return (
@@ -69,9 +80,7 @@ function LoginCard() {
         </h1>
         <h4 className="text-md font-sans font-medium">
           Welcome to{' '}
-          <span className="font-semibold italic text-blush-600">
-            Pairfect Match
-          </span>
+          <span className="font-semibold italic">Pairfect Match</span>
         </h4>
       </div>
       <div className="flex flex-col space-y-4">
@@ -103,7 +112,7 @@ function LoginCard() {
           />
         )}
         {error && <p className="text-sm font-medium text-blush-700">{error}</p>}
-        {success && (
+        {success && SHOW_SUCCESS && (
           <p className="text-sm font-medium text-leaf-500">SUCCESS!!</p>
         )}
       </div>
@@ -111,6 +120,9 @@ function LoginCard() {
         <Button onClick={handleSubmit} disabled={disableButton()}>
           {isLogin ? 'Log in' : 'Sign up'}
         </Button>
+        {/* <Button onClick={handleLogout} disabled={loading}>
+          Sign out
+        </Button> */}
         <p className="text-sm font-medium">
           {loginMessage()}{' '}
           <ButtonLink onClick={swapLogin}>

@@ -8,7 +8,7 @@ interface ButtonProps {
   className?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({
+const ButtonLink: React.FC<ButtonProps> = ({
   children,
   onClick,
   disabled = false,
@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
       className={clsx(
-        'text-yoghurt-500 font-sans font-medium underline transition duration-200 ease-in-out',
+        'font-sans font-medium text-yoghurt-500 underline transition duration-200 ease-in-out',
         'hover:text-yoghurt-300',
         disabled && 'cursor-not-allowed line-through opacity-60',
         className,
@@ -30,4 +30,4 @@ const Button: React.FC<ButtonProps> = ({
   );
 };
 
-export default Button;
+export default ButtonLink;

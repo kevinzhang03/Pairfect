@@ -8,7 +8,7 @@ interface ButtonProps {
   className?: string;
 }
 
-const ButtonLink: React.FC<ButtonProps> = ({
+const Button: React.FC<ButtonProps> = ({
   children,
   onClick,
   disabled = false,
@@ -19,7 +19,7 @@ const ButtonLink: React.FC<ButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
       className={clsx(
-        'bg-pear-500 text-cream w-32 rounded-full py-2 font-sans font-medium transition duration-200 ease-in-out',
+        'w-32 rounded-full bg-pear-500 py-2 font-sans font-medium text-cream transition duration-200 ease-in-out',
         'hover:bg-pear-600 active:scale-95',
         disabled && 'cursor-not-allowed opacity-60',
         className,
@@ -30,4 +30,4 @@ const ButtonLink: React.FC<ButtonProps> = ({
   );
 };
 
-export default ButtonLink;
+export default Button;
