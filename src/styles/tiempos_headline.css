@@ -1,0 +1,85 @@
+/* Tiempos Headline */
+
+@font-face {
+  font-family: 'Tiempos-Headline';
+  src: url('/fonts/Tiempos-Headline/TiemposHeadline-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tiempos-Headline';
+  src: url('/fonts/Tiempos-Headline/TiemposHeadline-RegularItalic.otf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Tiempos-Headline';
+  src: url('/fonts/Tiempos-Headline/TiemposHeadline-Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tiempos-Headline';
+  src: url('/fonts/Tiempos-Headline/TiemposHeadline-MediumItalic.otf');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Tiempos-Headline';
+  src: url('/fonts/Tiempos-Headline/TiemposHeadline-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tiempos-Headline';
+  src: url('/fonts/Tiempos-Headline/TiemposHeadline-BoldItalic.otf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Tiempos-Headline';
+  src: url('/fonts/Tiempos-Headline/TiemposHeadline-SemiBold.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tiempos-Headline';
+  src: url('/fonts/Tiempos-Headline/TiemposHeadline-SemiBoldItalic.otf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Tiempos-Headline';
+  src: url('/fonts/Tiempos-Headline/TiemposHeadline-Light.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tiempos-Headline';
+  src: url('/fonts/Tiempos-Headline/TiemposHeadline-LightItalic.otf');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Tiempos-Headline';
+  src: url('/fonts/Tiempos-Headline/TiemposHeadline-Black.otf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tiempos-Headline';
+  src: url('/fonts/Tiempos-Headline/TiemposHeadline-BlackItalic.otf');
+  font-weight: 900;
+  font-style: italic;
+}

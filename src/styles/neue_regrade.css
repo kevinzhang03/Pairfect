@@ -1,0 +1,78 @@
+/* Neue Regrade */
+
+@font-face {
+  font-family: 'Neue-Regrade';
+  src: url('/fonts/Neue-Regrade/Neue Regrade Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue-Regrade';
+  src: url('/fonts/Neue-Regrade/Neue Regrade Regular Italic.otf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neue-Regrade';
+  src: url('/fonts/Neue-Regrade/Neue Regrade Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue-Regrade';
+  src: url('/fonts/Neue-Regrade/Neue Regrade Medium Italic.otf');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neue-Regrade';
+  src: url('/fonts/Neue-Regrade/Neue Regrade Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue-Regrade';
+  src: url('/fonts/Neue-Regrade/Neue Regrade Bold Italic.otf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neue-Regrade';
+  src: url('/fonts/Neue-Regrade/Neue Regrade SemiBold.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue-Regrade';
+  src: url('/fonts/Neue-Regrade/Neue Regrade SemiBold Italic.otf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neue-Regrade';
+  src: url('/fonts/Neue-Regrade/Neue Regrade Light.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue-Regrade';
+  src: url('/fonts/Neue-Regrade/Neue Regrade Light Italic.otf');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neue-Regrade';
+  src: url('/fonts/Neue-Regrade/Neue Regrade ExtraBold.otf');
+  font-weight: 800;
+  font-style: normal;
+}
