@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-gray-500">
+      <body className="bg-yoghurt-700">
         <div className="mx-auto flex min-h-screen max-w-md flex-col bg-yoghurt-500 px-8 py-24 shadow-lg">
           <main className="flex grow flex-col">{children}</main>
         </div>
