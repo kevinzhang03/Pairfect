@@ -73,7 +73,7 @@ function LoginCard() {
   };
 
   return (
-    <div className="drop-shadown-xl flex w-full flex-col space-y-8 rounded-3xl bg-cream px-8 py-24">
+    <div className="drop-shadown-xl flex w-full flex-col space-y-8 rounded-3xl px-8 py-24">
       <div>
         <h1 className="font-800 text-left font-bold">
           {isLogin ? 'Log in' : 'Sign up'}
