@@ -2,7 +2,7 @@ export default function HomePage() {
   return (
     <div className="flex grow flex-col">
       <h1 className="text-cream">hiii</h1>
-      <div className="mt-4 flex flex-col space-y-2 text-cream">
+      {/* <div className="mt-4 flex flex-col space-y-2 text-cream">
         <p>
           hello team, i am very sorry but i could not anything meaningful for
           the backend. the only thing that sort of works is the frontend and
@@ -18,7 +18,7 @@ export default function HomePage() {
           you to /setup but that currently just has a bunch of dummy options
         </p>
         <p>glhf with the devpost :P</p>
-      </div>
+      </div> */}
     </div>
   );
 }
