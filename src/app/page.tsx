@@ -1,8 +1,10 @@
 import LoginCard from '@/components/LoginCard';
+import Pear from '@/components/Pear';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="flex grow flex-col items-center justify-center">
+      <Pear />
       <LoginCard />
     </div>
   );

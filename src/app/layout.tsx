@@ -14,12 +14,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-gray-500">
-        <div className="bg-yoghurt-500 mx-auto flex min-h-screen max-w-md flex-col px-8 shadow-lg">
-          {/* Sticky Header */}
-          {/* <header className="bg-blush-200 sticky top-4 z-10 mx-4 -mb-48 h-16 rounded-3xl bg-opacity-50 drop-shadow-xl backdrop-blur-sm"></header> */}
-          {/* Main content starts at the top of the header */}
-          <main className="grow">{children}</main>
-          {/* <footer className="bg-blush-500 h-16 w-full flex-none"></footer> */}
+        <div className="mx-auto flex min-h-screen max-w-md flex-col bg-yoghurt-500 px-8 py-24 shadow-lg">
+          <main className="flex grow flex-col">{children}</main>
         </div>
       </body>
     </html>

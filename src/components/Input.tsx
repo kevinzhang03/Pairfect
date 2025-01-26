@@ -9,15 +9,17 @@ interface InputProps {
   value?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   className?: string;
+  name?: string;
 }
 
 const Input: React.FC<InputProps> = ({
   type = 'text',
   placeholder = '',
   icon,
-  value,
+  value = '',
   onChange,
   className = '',
+  name,
 }) => {
   let IconComponent = null;
   switch (icon) {
@@ -34,13 +36,13 @@ const Input: React.FC<InputProps> = ({
   return (
     <div
       className={clsx(
-        'border-brown focus-within:border-pear-500 relative flex items-center border-b-2 transition-colors ease-in-out',
+        'relative flex items-center border-b-2 border-brown transition-colors ease-in-out focus-within:border-pear-500',
         className,
       )}
     >
       {IconComponent && (
         <div className="absolute left-0 flex h-full w-6 items-center justify-center">
-          <IconComponent className="text-brown h-5 w-5" />
+          <IconComponent className="h-5 w-5 text-brown" />
         </div>
       )}
       <input
@@ -48,7 +50,11 @@ const Input: React.FC<InputProps> = ({
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className={`placeholder-brown/60 w-full bg-transparent px-4 py-1 pl-${icon ? '8' : '4'} font-sans font-medium italic focus:outline-none`}
+        name={name}
+        className={clsx(
+          'w-full bg-transparent px-4 py-1 font-sans font-medium placeholder-brown/60 placeholder:italic focus:outline-none',
+          { 'pl-8': icon, 'pl-4': !icon },
+        )}
         style={{ paddingLeft: icon ? '2rem' : '1rem' }}
       />
     </div>
