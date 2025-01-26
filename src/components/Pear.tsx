@@ -8,7 +8,7 @@ interface PearProps {
 }
 
 function Pear({ className }: PearProps) {
-  return <Image src={pear} className={clsx('z-10', className)} alt="pear" />;
+  return <Image src={pear} className={clsx('z-50', className)} alt="pear" />;
 }
 
 export default Pear;
